@@ -1,0 +1,1507 @@
+[gd_resource type="Resource" script_class="IB_GT_GameData" load_steps=137 format=3]
+
+[ext_resource type="Script" path="res://logic_connection.gd" id="1"]
+[ext_resource type="Script" path="res://logic_frame.gd" id="2"]
+[ext_resource type="Script" path="res://logic_node.gd" id="3"]
+[ext_resource type="Script" path="res://logic_graph.gd" id="4"]
+[ext_resource type="Script" path="res://logic_variable.gd" id="5"]
+[ext_resource type="Script" path="res://object.gd" id="6"]
+[ext_resource type="Script" path="res://sprite_sheet.gd" id="7"]
+[ext_resource type="Script" path="res://brush.gd" id="8"]
+[ext_resource type="Script" path="res://object_ref.gd" id="9"]
+[ext_resource type="Script" path="res://room_ref.gd" id="10"]
+[ext_resource type="Script" path="res://map.gd" id="11"]
+[ext_resource type="Script" path="res://marker.gd" id="12"]
+[ext_resource type="Script" path="res://room.gd" id="13"]
+[ext_resource type="Script" path="res://game_map.gd" id="14"]
+[ext_resource type="Script" path="res://screen.gd" id="15"]
+[ext_resource type="Script" path="res://instrument.gd" id="16"]
+[ext_resource type="Script" path="res://game_data.gd" id="17"]
+[ext_resource type="Script" path="res://beep_fx_block.gd" id="18"]
+[ext_resource type="Script" path="res://beep_fx.gd" id="19"]
+[ext_resource type="Script" path="res://sub_graph.gd" id="20"]
+
+[sub_resource type="Resource" id="Resource_hp8he"]
+script = ExtResource("1")
+from_node = "39f0f51f-3189-4ae3-b015-5e718b62719e"
+to_node = "4e8ebcd4-a71b-4f16-8379-7ba093572918"
+from_port = 0
+from_port_name = "flow_out"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_mm5nm"]
+script = ExtResource("1")
+from_node = "97b6ab16-7b0d-4546-b1a6-3a4373d7f528"
+to_node = "74f2d7f8-b6d5-4264-bd03-bc62d423ecc1"
+from_port = 0
+from_port_name = "flow_out"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_5klxv"]
+script = ExtResource("1")
+from_node = "856169bd-23f7-413f-9f62-7ae7b17ccfd1"
+to_node = "74f2d7f8-b6d5-4264-bd03-bc62d423ecc1"
+from_port = 0
+from_port_name = "val"
+to_port = 1
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_5xvvm"]
+script = ExtResource("1")
+from_node = "2d58e7e9-3422-4b7a-ac7a-b264e43d35a4"
+to_node = "6a1bd681-0eb5-40fa-8e5f-2aae0496ce1c"
+from_port = 0
+from_port_name = "flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_fl1aw"]
+script = ExtResource("1")
+from_node = "4e8ebcd4-a71b-4f16-8379-7ba093572918"
+to_node = "6b517b09-7927-46aa-b53c-b97d3976727b"
+from_port = 0
+from_port_name = "flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_0oo5c"]
+script = ExtResource("1")
+from_node = "4563e5e9-a758-4915-8313-186f18a6f20b"
+to_node = "c2c552c1-0f12-4b1f-aa8c-6d060ef94be9"
+from_port = 0
+from_port_name = "flow_out"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_jq0wb"]
+script = ExtResource("1")
+from_node = "854465a2-b0f4-473b-b954-9e41676121c4"
+to_node = "71c46476-efcb-4038-b1e6-fc40a9a6e7ec"
+from_port = 0
+from_port_name = "val"
+to_port = 1
+to_port_name = "marker"
+type = 1
+
+[sub_resource type="Resource" id="Resource_qbgi4"]
+script = ExtResource("1")
+from_node = "370ddafa-2b53-4f61-a423-75afa772a6cb"
+to_node = "71c46476-efcb-4038-b1e6-fc40a9a6e7ec"
+from_port = 0
+from_port_name = "ref"
+to_port = 0
+to_port_name = "location"
+type = 3
+
+[sub_resource type="Resource" id="Resource_fjrnv"]
+script = ExtResource("1")
+from_node = "71c46476-efcb-4038-b1e6-fc40a9a6e7ec"
+to_node = "18c985a5-e43c-4196-a695-ab0f3a60b7c1"
+from_port = 0
+from_port_name = "x"
+to_port = 0
+to_port_name = "x_in"
+type = 1
+
+[sub_resource type="Resource" id="Resource_lu3v6"]
+script = ExtResource("1")
+from_node = "71c46476-efcb-4038-b1e6-fc40a9a6e7ec"
+to_node = "18c985a5-e43c-4196-a695-ab0f3a60b7c1"
+from_port = 1
+from_port_name = "y"
+to_port = 1
+to_port_name = "y_in"
+type = 1
+
+[sub_resource type="Resource" id="Resource_q7gn3"]
+script = ExtResource("1")
+from_node = "18c985a5-e43c-4196-a695-ab0f3a60b7c1"
+to_node = "517c8dd5-8c04-4afb-b0b4-de7bb6066e5d"
+from_port = 0
+from_port_name = "x_out"
+to_port = 1
+to_port_name = "x"
+type = 1
+
+[sub_resource type="Resource" id="Resource_8nq1t"]
+script = ExtResource("1")
+from_node = "18c985a5-e43c-4196-a695-ab0f3a60b7c1"
+to_node = "517c8dd5-8c04-4afb-b0b4-de7bb6066e5d"
+from_port = 1
+from_port_name = "y_out"
+to_port = 2
+to_port_name = "y"
+type = 1
+
+[sub_resource type="Resource" id="Resource_mbm4k"]
+script = ExtResource("1")
+from_node = "6a1bd681-0eb5-40fa-8e5f-2aae0496ce1c"
+to_node = "517c8dd5-8c04-4afb-b0b4-de7bb6066e5d"
+from_port = 0
+from_port_name = "flow_out"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_djqrg"]
+script = ExtResource("1")
+from_node = "74f2d7f8-b6d5-4264-bd03-bc62d423ecc1"
+to_node = "655920de-5b2e-4ed5-8421-10068d329192"
+from_port = 0
+from_port_name = "true_flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_us8kp"]
+script = ExtResource("1")
+from_node = "7ed56545-9d4f-462c-9282-5a6a8e6bb751"
+to_node = "655920de-5b2e-4ed5-8421-10068d329192"
+from_port = 0
+from_port_name = "val"
+to_port = 1
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_vf4x0"]
+script = ExtResource("1")
+from_node = "655920de-5b2e-4ed5-8421-10068d329192"
+to_node = "2d58e7e9-3422-4b7a-ac7a-b264e43d35a4"
+from_port = 0
+from_port_name = "true_flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_cejto"]
+script = ExtResource("3")
+id = "1b2ff373-b03f-44e4-80b7-58550072c549"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "Message 0 arrives when the player is attempting to get through the door"
+}
+position = Vector2(20, 760)
+node_size = Vector2(569.328, 174.888)
+
+[sub_resource type="Resource" id="Resource_58tjj"]
+script = ExtResource("3")
+id = "2d58e7e9-3422-4b7a-ac7a-b264e43d35a4"
+type = "3cc3fe06-4e80-4d64-8794-f82ce6655857"
+properties = {
+"const": 1,
+"variable": 0
+}
+position = Vector2(1980, 980)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_fbswo"]
+script = ExtResource("3")
+id = "37c7be59-9cb8-4c17-88ef-4ca4ef4d6307"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "Message 2 comes from the switch which, when flipped, tells the door to unlock"
+}
+position = Vector2(20, 1580)
+node_size = Vector2(607.986, 175.972)
+
+[sub_resource type="Resource" id="Resource_tfpro"]
+script = ExtResource("3")
+id = "39f0f51f-3189-4ae3-b015-5e718b62719e"
+type = "5ee2dc1f-6457-458a-bdcf-a510d535573c"
+properties = {
+"id": 2,
+"name": ""
+}
+position = Vector2(120, 1820)
+node_size = Vector2(254, 324)
+
+[sub_resource type="Resource" id="Resource_hqhhv"]
+script = ExtResource("3")
+id = "3d258d95-a6b0-45f8-88da-674eee0fb166"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "If the door isn't locked, open it. Update the sprite and remove the collision blocks hidden behind the door. I use a transparent brush which is the same size as the door and has no collision sides set. The door object has a variable giving the index of a marker. That marker indicates where to remove the collision blocks, allowing the player to pass"
+}
+position = Vector2(2160, 660)
+node_size = Vector2(1013.53, 299.478)
+
+[sub_resource type="Resource" id="Resource_1lnt5"]
+script = ExtResource("3")
+id = "4563e5e9-a758-4915-8313-186f18a6f20b"
+type = "7eeabba5-a095-4ea1-9e3a-5c10d352574d"
+properties = {}
+position = Vector2(260.574, 120.784)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_rh11c"]
+script = ExtResource("3")
+id = "4e8ebcd4-a71b-4f16-8379-7ba093572918"
+type = "3cc3fe06-4e80-4d64-8794-f82ce6655857"
+properties = {
+"const": 0,
+"variable": 1
+}
+position = Vector2(600, 1820)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_e2mn2"]
+script = ExtResource("3")
+id = "6a1bd681-0eb5-40fa-8e5f-2aae0496ce1c"
+type = "65005ffa-d937-4887-b6a1-cd39b6cebee6"
+properties = {
+"animation": 0,
+"frame": 1,
+"rate": 0
+}
+position = Vector2(2500, 980)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_xyepe"]
+script = ExtResource("3")
+id = "6b517b09-7927-46aa-b53c-b97d3976727b"
+type = "09bbfcb0-07ed-4334-9448-d2cabd97ed8f"
+properties = {
+"bright": 0,
+"ignore_bright": false,
+"ignore_ink": false,
+"ignore_paper": false,
+"ink": 4,
+"paper": 0
+}
+position = Vector2(1180, 1820)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_kuf5d"]
+script = ExtResource("3")
+id = "74f2d7f8-b6d5-4264-bd03-bc62d423ecc1"
+type = "9700ab27-9c03-4439-9aef-c7556a9f204e"
+properties = {
+"comparator": 0,
+"const_opb": 0
+}
+position = Vector2(800, 980)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_arped"]
+script = ExtResource("3")
+id = "856169bd-23f7-413f-9f62-7ae7b17ccfd1"
+type = "0a7dba4a-4b4c-4ff5-a123-a25221ed370e"
+properties = {
+"variable": 1
+}
+position = Vector2(460, 1280)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_kpol6"]
+script = ExtResource("3")
+id = "97b6ab16-7b0d-4546-b1a6-3a4373d7f528"
+type = "5ee2dc1f-6457-458a-bdcf-a510d535573c"
+properties = {
+"id": 0,
+"name": ""
+}
+position = Vector2(160, 980)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_56l8x"]
+script = ExtResource("3")
+id = "c2c552c1-0f12-4b1f-aa8c-6d060ef94be9"
+type = "65005ffa-d937-4887-b6a1-cd39b6cebee6"
+properties = {
+"animation": 0,
+"frame": 0,
+"rate": 0
+}
+position = Vector2(540, 120)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_x2s2g"]
+script = ExtResource("3")
+id = "71c46476-efcb-4038-b1e6-fc40a9a6e7ec"
+type = "31c06f87-3229-452c-8ccb-47efe4cabfc6"
+properties = {
+"marker": 0
+}
+position = Vector2(2860, 1420)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_2w74q"]
+script = ExtResource("3")
+id = "854465a2-b0f4-473b-b954-9e41676121c4"
+type = "0a7dba4a-4b4c-4ff5-a123-a25221ed370e"
+properties = {
+"variable": 2
+}
+position = Vector2(2400, 1600)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_p0x0d"]
+script = ExtResource("3")
+id = "370ddafa-2b53-4f61-a423-75afa772a6cb"
+type = "21992143-e66a-4a66-a91d-e4e3cacc3a0a"
+properties = {}
+position = Vector2(2400, 1440)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_j480l"]
+script = ExtResource("3")
+id = "18c985a5-e43c-4196-a695-ab0f3a60b7c1"
+type = "95acc913-482e-417e-9e73-21bcd651f330"
+properties = {
+"x_in": 0,
+"y_in": 0
+}
+position = Vector2(3300, 1500)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_vqpoo"]
+script = ExtResource("3")
+id = "517c8dd5-8c04-4afb-b0b4-de7bb6066e5d"
+type = "5ddde04c-6e4a-469b-bca3-9db67736dbb5"
+properties = {
+"const_brush": 0,
+"const_x": 0,
+"const_y": 0
+}
+position = Vector2(3700, 1140)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_lfiyh"]
+script = ExtResource("3")
+id = "655920de-5b2e-4ed5-8421-10068d329192"
+type = "9700ab27-9c03-4439-9aef-c7556a9f204e"
+properties = {
+"comparator": 0,
+"const_opb": 0
+}
+position = Vector2(1460, 980)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_ngrr7"]
+script = ExtResource("3")
+id = "7ed56545-9d4f-462c-9282-5a6a8e6bb751"
+type = "0a7dba4a-4b4c-4ff5-a123-a25221ed370e"
+properties = {
+"variable": 0
+}
+position = Vector2(1120, 1280)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_hfjeb"]
+script = ExtResource("5")
+name = "open"
+type = 2
+
+[sub_resource type="Resource" id="Resource_w4k5u"]
+script = ExtResource("5")
+name = "locked"
+type = 2
+
+[sub_resource type="Resource" id="Resource_barih"]
+script = ExtResource("5")
+name = "unlock_marker"
+type = 2
+
+[sub_resource type="Resource" id="Resource_b0jak"]
+script = ExtResource("4")
+graph_name = "Graph"
+variables = Array[ExtResource("5")]([SubResource("Resource_hfjeb"), SubResource("Resource_w4k5u"), SubResource("Resource_barih")])
+nodes = {
+"18c985a5-e43c-4196-a695-ab0f3a60b7c1": SubResource("Resource_j480l"),
+"1b2ff373-b03f-44e4-80b7-58550072c549": SubResource("Resource_cejto"),
+"2d58e7e9-3422-4b7a-ac7a-b264e43d35a4": SubResource("Resource_58tjj"),
+"370ddafa-2b53-4f61-a423-75afa772a6cb": SubResource("Resource_p0x0d"),
+"37c7be59-9cb8-4c17-88ef-4ca4ef4d6307": SubResource("Resource_fbswo"),
+"39f0f51f-3189-4ae3-b015-5e718b62719e": SubResource("Resource_tfpro"),
+"3d258d95-a6b0-45f8-88da-674eee0fb166": SubResource("Resource_hqhhv"),
+"4563e5e9-a758-4915-8313-186f18a6f20b": SubResource("Resource_1lnt5"),
+"4e8ebcd4-a71b-4f16-8379-7ba093572918": SubResource("Resource_rh11c"),
+"517c8dd5-8c04-4afb-b0b4-de7bb6066e5d": SubResource("Resource_vqpoo"),
+"655920de-5b2e-4ed5-8421-10068d329192": SubResource("Resource_lfiyh"),
+"6a1bd681-0eb5-40fa-8e5f-2aae0496ce1c": SubResource("Resource_e2mn2"),
+"6b517b09-7927-46aa-b53c-b97d3976727b": SubResource("Resource_xyepe"),
+"71c46476-efcb-4038-b1e6-fc40a9a6e7ec": SubResource("Resource_x2s2g"),
+"74f2d7f8-b6d5-4264-bd03-bc62d423ecc1": SubResource("Resource_kuf5d"),
+"7ed56545-9d4f-462c-9282-5a6a8e6bb751": SubResource("Resource_ngrr7"),
+"854465a2-b0f4-473b-b954-9e41676121c4": SubResource("Resource_2w74q"),
+"856169bd-23f7-413f-9f62-7ae7b17ccfd1": SubResource("Resource_arped"),
+"97b6ab16-7b0d-4546-b1a6-3a4373d7f528": SubResource("Resource_kpol6"),
+"c2c552c1-0f12-4b1f-aa8c-6d060ef94be9": SubResource("Resource_56l8x")
+}
+connections = Array[ExtResource("1")]([SubResource("Resource_hp8he"), SubResource("Resource_mm5nm"), SubResource("Resource_5klxv"), SubResource("Resource_5xvvm"), SubResource("Resource_fl1aw"), SubResource("Resource_0oo5c"), SubResource("Resource_jq0wb"), SubResource("Resource_qbgi4"), SubResource("Resource_fjrnv"), SubResource("Resource_lu3v6"), SubResource("Resource_q7gn3"), SubResource("Resource_8nq1t"), SubResource("Resource_mbm4k"), SubResource("Resource_djqrg"), SubResource("Resource_us8kp"), SubResource("Resource_vf4x0")])
+logic_container = null
+frames = Array[ExtResource("2")]([])
+inputs = Array[String]([])
+outputs = Array[String]([])
+
+[sub_resource type="Resource" id="Resource_wnpwt"]
+script = ExtResource("7")
+sheet_name = "Main"
+num_sprites = 3
+num_layers = 2
+sprite_width = 16
+sprite_height = 16
+num_pixels_per_sprite = 256
+sprite_data = [[Array[int]([0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0]), Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0]), Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0]), Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])]]
+sprite_properties = Array[Dictionary]([{}, {}, {}])
+
+[sub_resource type="Resource" id="Resource_7kfyl"]
+script = ExtResource("6")
+object_name = "Door"
+animation_frames = Array[int]([])
+animations = [[0, 1]]
+sprite_sheet = SubResource("Resource_wnpwt")
+object_logic = SubResource("Resource_b0jak")
+draw_mode = 0
+num_dynamic = 0
+single_colour = -1
+properties = {}
+
+[sub_resource type="Resource" id="Resource_0rhij"]
+script = ExtResource("8")
+contents = [[{
+"attr": {
+"collision": 0
+},
+"tile": null
+}, {
+"attr": {
+"collision": 0
+},
+"tile": null
+}], [{
+"attr": {
+"collision": 0
+},
+"tile": null
+}, {
+"attr": {
+"collision": 0
+},
+"tile": null
+}]]
+
+[sub_resource type="Resource" id="Resource_afsj3"]
+script = ExtResource("1")
+from_node = "b66b022b-4fc5-4765-81a8-0f90dd4663e9"
+to_node = "37fda7c4-e96a-4531-bab0-500907fb7526"
+from_port = 0
+from_port_name = "flow_out"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_mo82r"]
+script = ExtResource("1")
+from_node = "8cb3fc9b-993e-42bf-b160-1f9eabb0ba5f"
+to_node = "cfcff6c4-1db1-4f0f-b075-6bfc28f0bd49"
+from_port = 0
+from_port_name = "left"
+to_port = 0
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_juooy"]
+script = ExtResource("1")
+from_node = "8cb3fc9b-993e-42bf-b160-1f9eabb0ba5f"
+to_node = "cfcff6c4-1db1-4f0f-b075-6bfc28f0bd49"
+from_port = 1
+from_port_name = "right"
+to_port = 1
+to_port_name = "b_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_x6td5"]
+script = ExtResource("1")
+from_node = "8cb3fc9b-993e-42bf-b160-1f9eabb0ba5f"
+to_node = "83b21e8d-fddd-403a-a6c6-6fd3157df17b"
+from_port = 2
+from_port_name = "up"
+to_port = 0
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_2h6t4"]
+script = ExtResource("1")
+from_node = "8cb3fc9b-993e-42bf-b160-1f9eabb0ba5f"
+to_node = "83b21e8d-fddd-403a-a6c6-6fd3157df17b"
+from_port = 3
+from_port_name = "down"
+to_port = 1
+to_port_name = "b_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_fmref"]
+script = ExtResource("1")
+from_node = "ac8ac832-059e-4d65-a244-3f82f268409f"
+to_node = "e706daad-6da9-4e8b-adae-b79dcc976d56"
+from_port = 2
+from_port_name = "x"
+to_port = 0
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_k8oln"]
+script = ExtResource("1")
+from_node = "cfcff6c4-1db1-4f0f-b075-6bfc28f0bd49"
+to_node = "e706daad-6da9-4e8b-adae-b79dcc976d56"
+from_port = 0
+from_port_name = "result"
+to_port = 1
+to_port_name = "b_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_j05di"]
+script = ExtResource("1")
+from_node = "e706daad-6da9-4e8b-adae-b79dcc976d56"
+to_node = "37fda7c4-e96a-4531-bab0-500907fb7526"
+from_port = 0
+from_port_name = "result"
+to_port = 2
+to_port_name = "x"
+type = 1
+
+[sub_resource type="Resource" id="Resource_3w8jk"]
+script = ExtResource("1")
+from_node = "ac8ac832-059e-4d65-a244-3f82f268409f"
+to_node = "b6cbbf3c-451f-4d57-965d-c192db4cc729"
+from_port = 3
+from_port_name = "y"
+to_port = 0
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_k54ga"]
+script = ExtResource("1")
+from_node = "83b21e8d-fddd-403a-a6c6-6fd3157df17b"
+to_node = "b6cbbf3c-451f-4d57-965d-c192db4cc729"
+from_port = 0
+from_port_name = "result"
+to_port = 1
+to_port_name = "b_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_xjvh0"]
+script = ExtResource("1")
+from_node = "b6cbbf3c-451f-4d57-965d-c192db4cc729"
+to_node = "37fda7c4-e96a-4531-bab0-500907fb7526"
+from_port = 0
+from_port_name = "result"
+to_port = 3
+to_port_name = "y"
+type = 1
+
+[sub_resource type="Resource" id="Resource_4fijr"]
+script = ExtResource("1")
+from_node = "d5bf4614-041f-4e02-8fd2-f8836bd5de92"
+to_node = "ea58c275-d187-44e5-8ea1-07409bbf651a"
+from_port = 0
+from_port_name = "flow_out"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_r1imd"]
+script = ExtResource("1")
+from_node = "d5bf4614-041f-4e02-8fd2-f8836bd5de92"
+to_node = "ea58c275-d187-44e5-8ea1-07409bbf651a"
+from_port = 1
+from_port_name = "ref"
+to_port = 1
+to_port_name = "ref"
+type = 2
+
+[sub_resource type="Resource" id="Resource_muakc"]
+script = ExtResource("1")
+from_node = "ea58c275-d187-44e5-8ea1-07409bbf651a"
+to_node = "c718c1d0-2dd6-45d2-b51c-c64861d5bbe1"
+from_port = 0
+from_port_name = "true_flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_2n8x1"]
+script = ExtResource("1")
+from_node = "d5bf4614-041f-4e02-8fd2-f8836bd5de92"
+to_node = "c718c1d0-2dd6-45d2-b51c-c64861d5bbe1"
+from_port = 1
+from_port_name = "ref"
+to_port = 1
+to_port_name = "ref"
+type = 2
+
+[sub_resource type="Resource" id="Resource_ilxhr"]
+script = ExtResource("3")
+id = "2fdebb8d-2fff-402b-88ed-924201b3cbd5"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "Basic movement for the player"
+}
+position = Vector2(2080, 880)
+node_size = Vector2(473.093, 124.308)
+
+[sub_resource type="Resource" id="Resource_mb2m1"]
+script = ExtResource("3")
+id = "37fda7c4-e96a-4531-bab0-500907fb7526"
+type = "53f3a6c9-2666-4c7f-8094-327c49e6771f"
+properties = {
+"const_x": 0,
+"const_y": 0
+}
+position = Vector2(2100, 480)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_hqyd8"]
+script = ExtResource("3")
+id = "83b21e8d-fddd-403a-a6c6-6fd3157df17b"
+type = "0e45e2d8-c81e-4b2d-bdee-f1d7195290b2"
+properties = {
+"const_opb": 0,
+"operator": 0
+}
+position = Vector2(960, 1240)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_x4kde"]
+script = ExtResource("3")
+id = "8cb3fc9b-993e-42bf-b160-1f9eabb0ba5f"
+type = "ca52338c-d006-4083-9ed0-794f54f2c3ec"
+properties = {
+"down": 1,
+"fire": 0,
+"left": -1,
+"mode": 0,
+"right": 1,
+"up": -1
+}
+position = Vector2(440, 1040)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_vg03u"]
+script = ExtResource("3")
+id = "ac8ac832-059e-4d65-a244-3f82f268409f"
+type = "dbdcce8d-d479-45dd-93d0-fcb65460bfa7"
+properties = {}
+position = Vector2(1220, 560)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_ped3h"]
+script = ExtResource("3")
+id = "b66b022b-4fc5-4765-81a8-0f90dd4663e9"
+type = "ea060114-986d-40b8-8197-fd1408d3d6d3"
+properties = {
+"order": 0
+}
+position = Vector2(740, 180)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_yqt8k"]
+script = ExtResource("3")
+id = "b6cbbf3c-451f-4d57-965d-c192db4cc729"
+type = "0e45e2d8-c81e-4b2d-bdee-f1d7195290b2"
+properties = {
+"const_opb": 0,
+"operator": 0
+}
+position = Vector2(1660, 1000)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_dqgwg"]
+script = ExtResource("3")
+id = "c718c1d0-2dd6-45d2-b51c-c64861d5bbe1"
+type = "217a6dc4-b10a-479e-b34e-1cbf5363c562"
+properties = {
+"id": 0,
+"p1": 0,
+"p2": 0
+}
+position = Vector2(1900, 2160)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_m3dyt"]
+script = ExtResource("3")
+id = "cfcff6c4-1db1-4f0f-b075-6bfc28f0bd49"
+type = "0e45e2d8-c81e-4b2d-bdee-f1d7195290b2"
+properties = {
+"const_opb": 0,
+"operator": 0
+}
+position = Vector2(960, 980)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_wpfhd"]
+script = ExtResource("3")
+id = "d5bf4614-041f-4e02-8fd2-f8836bd5de92"
+type = "63f3d2ce-3740-4eaf-a87a-1a06762b6af8"
+properties = {}
+position = Vector2(1060, 1880)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_ywqcf"]
+script = ExtResource("3")
+id = "e706daad-6da9-4e8b-adae-b79dcc976d56"
+type = "0e45e2d8-c81e-4b2d-bdee-f1d7195290b2"
+properties = {
+"const_opb": 0,
+"operator": 0
+}
+position = Vector2(1660, 700)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_3f80y"]
+script = ExtResource("3")
+id = "ea58c275-d187-44e5-8ea1-07409bbf651a"
+type = "19244ef0-3b3f-4b5a-abc7-dfada8c4dfc3"
+properties = {
+"object_type": 0
+}
+position = Vector2(1580, 1860)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_oa28v"]
+script = ExtResource("3")
+id = "f04e2a1b-6ef5-4992-9209-e6406ddeb39c"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "Message the door indicating the player is trying to get through"
+}
+position = Vector2(1900, 1860)
+node_size = Vector2(498.508, 184.615)
+
+[sub_resource type="Resource" id="Resource_oja10"]
+script = ExtResource("4")
+graph_name = "Graph"
+variables = Array[ExtResource("5")]([])
+nodes = {
+"2fdebb8d-2fff-402b-88ed-924201b3cbd5": SubResource("Resource_ilxhr"),
+"37fda7c4-e96a-4531-bab0-500907fb7526": SubResource("Resource_mb2m1"),
+"83b21e8d-fddd-403a-a6c6-6fd3157df17b": SubResource("Resource_hqyd8"),
+"8cb3fc9b-993e-42bf-b160-1f9eabb0ba5f": SubResource("Resource_x4kde"),
+"ac8ac832-059e-4d65-a244-3f82f268409f": SubResource("Resource_vg03u"),
+"b66b022b-4fc5-4765-81a8-0f90dd4663e9": SubResource("Resource_ped3h"),
+"b6cbbf3c-451f-4d57-965d-c192db4cc729": SubResource("Resource_yqt8k"),
+"c718c1d0-2dd6-45d2-b51c-c64861d5bbe1": SubResource("Resource_dqgwg"),
+"cfcff6c4-1db1-4f0f-b075-6bfc28f0bd49": SubResource("Resource_m3dyt"),
+"d5bf4614-041f-4e02-8fd2-f8836bd5de92": SubResource("Resource_wpfhd"),
+"e706daad-6da9-4e8b-adae-b79dcc976d56": SubResource("Resource_ywqcf"),
+"ea58c275-d187-44e5-8ea1-07409bbf651a": SubResource("Resource_3f80y"),
+"f04e2a1b-6ef5-4992-9209-e6406ddeb39c": SubResource("Resource_oa28v")
+}
+connections = Array[ExtResource("1")]([SubResource("Resource_afsj3"), SubResource("Resource_mo82r"), SubResource("Resource_juooy"), SubResource("Resource_x6td5"), SubResource("Resource_2h6t4"), SubResource("Resource_fmref"), SubResource("Resource_k8oln"), SubResource("Resource_j05di"), SubResource("Resource_3w8jk"), SubResource("Resource_k54ga"), SubResource("Resource_xjvh0"), SubResource("Resource_4fijr"), SubResource("Resource_r1imd"), SubResource("Resource_muakc"), SubResource("Resource_2n8x1")])
+logic_container = null
+frames = Array[ExtResource("2")]([])
+inputs = Array[String]([])
+outputs = Array[String]([])
+
+[sub_resource type="Resource" id="Resource_3j4h2"]
+script = ExtResource("6")
+object_name = "Player"
+animation_frames = Array[int]([])
+animations = [[2]]
+sprite_sheet = SubResource("Resource_wnpwt")
+object_logic = SubResource("Resource_oja10")
+draw_mode = 0
+num_dynamic = 0
+single_colour = -1
+properties = {}
+
+[sub_resource type="Resource" id="Resource_t60jl"]
+script = ExtResource("9")
+object = SubResource("Resource_3j4h2")
+object_ref_name = "Player"
+initial_pos = Vector2i(139, 222)
+flags = {
+"active": true,
+"collide": false,
+"collide_background": true,
+"player": true,
+"visible": true
+}
+on_layers = 1
+intersect_layers = 1
+instance_variables = {}
+var_array = []
+def_var_array = []
+timeline_animations = {}
+timeline_anim_array = []
+current_animation = 0
+animation = 0
+current_frame = 0
+is_global = true
+animation_rate = 0
+properties = {
+"plane": 0
+}
+
+[sub_resource type="Resource" id="Resource_4xty8"]
+script = ExtResource("11")
+map_name = "unnamed"
+cells = {
+Vector2i(0, 0): 0,
+Vector2i(0, 1): 0,
+Vector2i(0, 2): 0,
+Vector2i(0, 3): 0,
+Vector2i(0, 4): 0,
+Vector2i(0, 5): 0,
+Vector2i(0, 6): 0,
+Vector2i(0, 7): 0,
+Vector2i(0, 8): 0,
+Vector2i(0, 9): 0,
+Vector2i(0, 10): 0,
+Vector2i(0, 11): 0,
+Vector2i(0, 12): 0,
+Vector2i(0, 13): 0,
+Vector2i(0, 14): 0,
+Vector2i(0, 15): 0,
+Vector2i(0, 16): 0,
+Vector2i(0, 17): 0,
+Vector2i(0, 18): 0,
+Vector2i(0, 19): 0,
+Vector2i(0, 20): 0,
+Vector2i(0, 21): 0,
+Vector2i(0, 22): 0,
+Vector2i(0, 23): 0,
+Vector2i(1, 0): 0,
+Vector2i(1, 23): 0,
+Vector2i(2, 0): 0,
+Vector2i(2, 23): 0,
+Vector2i(3, 0): 0,
+Vector2i(3, 23): 0,
+Vector2i(4, 0): 0,
+Vector2i(4, 23): 0,
+Vector2i(5, 0): 0,
+Vector2i(5, 23): 0,
+Vector2i(6, 0): 0,
+Vector2i(6, 23): 0,
+Vector2i(7, 0): 0,
+Vector2i(7, 23): 0,
+Vector2i(8, 0): 0,
+Vector2i(8, 23): 0,
+Vector2i(9, 0): 0,
+Vector2i(9, 23): 0,
+Vector2i(10, 0): 0,
+Vector2i(10, 23): 0,
+Vector2i(11, 0): 0,
+Vector2i(11, 1): 0,
+Vector2i(11, 2): 0,
+Vector2i(11, 3): 0,
+Vector2i(11, 4): 0,
+Vector2i(11, 5): 0,
+Vector2i(11, 6): 0,
+Vector2i(11, 7): 0,
+Vector2i(11, 8): 0,
+Vector2i(11, 9): 0,
+Vector2i(11, 14): 0,
+Vector2i(11, 15): 0,
+Vector2i(11, 16): 0,
+Vector2i(11, 17): 0,
+Vector2i(11, 18): 0,
+Vector2i(11, 19): 0,
+Vector2i(11, 20): 0,
+Vector2i(11, 21): 0,
+Vector2i(11, 22): 0,
+Vector2i(11, 23): 0,
+Vector2i(12, 9): 0,
+Vector2i(12, 14): 0,
+Vector2i(13, 9): 0,
+Vector2i(13, 14): 0,
+Vector2i(14, 9): 0,
+Vector2i(14, 14): 0,
+Vector2i(15, 9): 0,
+Vector2i(15, 10): 0,
+Vector2i(15, 13): 0,
+Vector2i(15, 14): 0,
+Vector2i(16, 9): 0,
+Vector2i(16, 10): 0,
+Vector2i(16, 13): 0,
+Vector2i(16, 14): 0,
+Vector2i(17, 9): 0,
+Vector2i(17, 14): 0,
+Vector2i(18, 9): 0,
+Vector2i(18, 14): 0,
+Vector2i(19, 9): 0,
+Vector2i(19, 14): 0,
+Vector2i(20, 0): 0,
+Vector2i(20, 1): 0,
+Vector2i(20, 2): 0,
+Vector2i(20, 3): 0,
+Vector2i(20, 4): 0,
+Vector2i(20, 5): 0,
+Vector2i(20, 6): 0,
+Vector2i(20, 7): 0,
+Vector2i(20, 8): 0,
+Vector2i(20, 9): 0,
+Vector2i(20, 14): 0,
+Vector2i(20, 15): 0,
+Vector2i(20, 16): 0,
+Vector2i(20, 17): 0,
+Vector2i(20, 18): 0,
+Vector2i(20, 19): 0,
+Vector2i(20, 20): 0,
+Vector2i(20, 21): 0,
+Vector2i(20, 22): 0,
+Vector2i(20, 23): 0,
+Vector2i(21, 0): 0,
+Vector2i(21, 23): 0,
+Vector2i(22, 0): 0,
+Vector2i(22, 23): 0,
+Vector2i(23, 0): 0,
+Vector2i(23, 23): 0,
+Vector2i(24, 0): 0,
+Vector2i(24, 23): 0,
+Vector2i(25, 0): 0,
+Vector2i(25, 23): 0,
+Vector2i(26, 0): 0,
+Vector2i(26, 23): 0,
+Vector2i(27, 0): 0,
+Vector2i(27, 23): 0,
+Vector2i(28, 0): 0,
+Vector2i(28, 23): 0,
+Vector2i(29, 0): 0,
+Vector2i(29, 23): 0,
+Vector2i(30, 0): 0,
+Vector2i(30, 23): 0,
+Vector2i(31, 0): 0,
+Vector2i(31, 1): 0,
+Vector2i(31, 2): 0,
+Vector2i(31, 3): 0,
+Vector2i(31, 4): 0,
+Vector2i(31, 5): 0,
+Vector2i(31, 6): 0,
+Vector2i(31, 7): 0,
+Vector2i(31, 8): 0,
+Vector2i(31, 9): 0,
+Vector2i(31, 10): 0,
+Vector2i(31, 11): 0,
+Vector2i(31, 12): 0,
+Vector2i(31, 13): 0,
+Vector2i(31, 14): 0,
+Vector2i(31, 15): 0,
+Vector2i(31, 16): 0,
+Vector2i(31, 17): 0,
+Vector2i(31, 18): 0,
+Vector2i(31, 19): 0,
+Vector2i(31, 20): 0,
+Vector2i(31, 21): 0,
+Vector2i(31, 22): 0,
+Vector2i(31, 23): 0
+}
+attrs = {
+Vector2i(16, 11): {
+"collision": 4
+},
+Vector2i(16, 12): {
+"collision": 4
+}
+}
+brushes = {}
+
+[sub_resource type="Resource" id="Resource_smv1t"]
+script = ExtResource("12")
+pos = Vector2i(124, 93)
+
+[sub_resource type="Resource" id="Resource_68k0y"]
+script = ExtResource("9")
+object = SubResource("Resource_7kfyl")
+object_ref_name = "Door"
+initial_pos = Vector2i(120, 88)
+flags = {
+"active": true,
+"collide": false,
+"collide_background": false,
+"player": false,
+"visible": true
+}
+on_layers = 1
+intersect_layers = 1
+instance_variables = {}
+var_array = [0, 0, 0]
+def_var_array = [0, 1, 0]
+timeline_animations = {}
+timeline_anim_array = []
+current_animation = 0
+animation = 0
+current_frame = 0
+is_global = false
+animation_rate = 0
+properties = {
+"ink_colour": 2,
+"plane": 1
+}
+
+[sub_resource type="Resource" id="Resource_uhimj"]
+script = ExtResource("1")
+from_node = "844169a9-7a0c-4128-8cf1-99cf87099924"
+to_node = "10ff283d-c5f8-4d82-9cd1-f174bf06d0bc"
+from_port = 0
+from_port_name = "flow_out"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_dltvv"]
+script = ExtResource("1")
+from_node = "10ff283d-c5f8-4d82-9cd1-f174bf06d0bc"
+to_node = "4580be0b-3a29-4187-884d-1f16cb90493b"
+from_port = 0
+from_port_name = "flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_lubag"]
+script = ExtResource("1")
+from_node = "ca67f044-1543-40f6-aa0d-eccfb817cfd8"
+to_node = "66ae60a8-d724-4da5-b686-6052a032db58"
+from_port = 0
+from_port_name = "flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_vj272"]
+script = ExtResource("1")
+from_node = "aee8b9ec-f0d4-4981-8a0b-ec092703f5c3"
+to_node = "20149d16-adf0-454d-9eea-67054f1939d0"
+from_port = 0
+from_port_name = "val"
+to_port = 1
+to_port_name = "a_val"
+type = 1
+
+[sub_resource type="Resource" id="Resource_nrogm"]
+script = ExtResource("1")
+from_node = "20149d16-adf0-454d-9eea-67054f1939d0"
+to_node = "ca67f044-1543-40f6-aa0d-eccfb817cfd8"
+from_port = 0
+from_port_name = "true_flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_neil5"]
+script = ExtResource("1")
+from_node = "9d41116f-c777-4bcf-99d8-db9f19975d5b"
+to_node = "a25cf0ec-f619-48cd-8a2d-874799d4be25"
+from_port = 0
+from_port_name = "flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_rr8cj"]
+script = ExtResource("1")
+from_node = "5d1c219d-f558-43ef-b8d9-2c2dfd97f888"
+to_node = "99eb5be0-7a86-498d-8c7d-b249e7b7b806"
+from_port = 0
+from_port_name = "ref"
+to_port = 1
+to_port_name = "ref"
+type = 2
+
+[sub_resource type="Resource" id="Resource_k1w6h"]
+script = ExtResource("1")
+from_node = "66ae60a8-d724-4da5-b686-6052a032db58"
+to_node = "99eb5be0-7a86-498d-8c7d-b249e7b7b806"
+from_port = 0
+from_port_name = "flow_out"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_gllm1"]
+script = ExtResource("1")
+from_node = "4a1e4a20-7b38-4c7d-82a3-45d7548686e0"
+to_node = "20149d16-adf0-454d-9eea-67054f1939d0"
+from_port = 0
+from_port_name = "flow_out"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_spt1f"]
+script = ExtResource("3")
+id = "10ff283d-c5f8-4d82-9cd1-f174bf06d0bc"
+type = "3cc3fe06-4e80-4d64-8794-f82ce6655857"
+properties = {
+"const": 0,
+"variable": 0
+}
+position = Vector2(1260, 440)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_txbew"]
+script = ExtResource("3")
+id = "20149d16-adf0-454d-9eea-67054f1939d0"
+type = "9700ab27-9c03-4439-9aef-c7556a9f204e"
+properties = {
+"comparator": 0,
+"const_opb": 0
+}
+position = Vector2(1350.98, 1584.82)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_u4xox"]
+script = ExtResource("3")
+id = "4580be0b-3a29-4187-884d-1f16cb90493b"
+type = "65005ffa-d937-4887-b6a1-cd39b6cebee6"
+properties = {
+"animation": 0,
+"frame": 0,
+"rate": 0
+}
+position = Vector2(1760, 440)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_35x8s"]
+script = ExtResource("3")
+id = "542e74eb-6f8f-491f-be51-bcc0c6691ebd"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "I'd like this to be a toggle, but while the player is on the switch it flips back and forth madly. I can't think of a way round that, so for now it's a simple single flip"
+}
+position = Vector2(1360, 2000)
+node_size = Vector2(900, 219)
+
+[sub_resource type="Resource" id="Resource_4bamt"]
+script = ExtResource("3")
+id = "5d1c219d-f558-43ef-b8d9-2c2dfd97f888"
+type = "ed7968b3-c1a1-4e6a-b087-33fd49a6e4d1"
+properties = {
+"object": 0,
+"room": 0
+}
+position = Vector2(2940, 1440)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_hus8a"]
+script = ExtResource("3")
+id = "66ae60a8-d724-4da5-b686-6052a032db58"
+type = "65005ffa-d937-4887-b6a1-cd39b6cebee6"
+properties = {
+"animation": 0,
+"frame": 1,
+"rate": 0
+}
+position = Vector2(2520, 1280)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_ar4rr"]
+script = ExtResource("3")
+id = "844169a9-7a0c-4128-8cf1-99cf87099924"
+type = "7eeabba5-a095-4ea1-9e3a-5c10d352574d"
+properties = {}
+position = Vector2(914.027, 443.127)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_7wnbb"]
+script = ExtResource("3")
+id = "99eb5be0-7a86-498d-8c7d-b249e7b7b806"
+type = "217a6dc4-b10a-479e-b34e-1cbf5363c562"
+properties = {
+"id": 2,
+"p1": 0,
+"p2": 0
+}
+position = Vector2(3440, 1240)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_fdw1d"]
+script = ExtResource("3")
+id = "9a566f8b-1cd1-4ae3-9fad-ec0ca9449ecf"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "When the switch is flipped, message the door telling it to unlock (as opposed to open)"
+}
+position = Vector2(3281.45, 960.042)
+node_size = Vector2(665.16, 164.24)
+
+[sub_resource type="Resource" id="Resource_e37vd"]
+script = ExtResource("3")
+id = "9d41116f-c777-4bcf-99d8-db9f19975d5b"
+type = "3cc3fe06-4e80-4d64-8794-f82ce6655857"
+properties = {
+"const": 0,
+"variable": 0
+}
+position = Vector2(1940, 1700)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_533yc"]
+script = ExtResource("3")
+id = "a25cf0ec-f619-48cd-8a2d-874799d4be25"
+type = "65005ffa-d937-4887-b6a1-cd39b6cebee6"
+properties = {
+"animation": 0,
+"frame": 0,
+"rate": 0
+}
+position = Vector2(2520, 1720)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_2m8dt"]
+script = ExtResource("3")
+id = "aee8b9ec-f0d4-4981-8a0b-ec092703f5c3"
+type = "0a7dba4a-4b4c-4ff5-a123-a25221ed370e"
+properties = {
+"variable": 0
+}
+position = Vector2(940, 1920)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_8n7gn"]
+script = ExtResource("3")
+id = "ca67f044-1543-40f6-aa0d-eccfb817cfd8"
+type = "3cc3fe06-4e80-4d64-8794-f82ce6655857"
+properties = {
+"const": 1,
+"variable": 0
+}
+position = Vector2(1940, 1260)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_klv6q"]
+script = ExtResource("3")
+id = "4a1e4a20-7b38-4c7d-82a3-45d7548686e0"
+type = "63f3d2ce-3740-4eaf-a87a-1a06762b6af8"
+properties = {}
+position = Vector2(960, 1500)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_esinw"]
+script = ExtResource("5")
+name = "on_off"
+type = 2
+
+[sub_resource type="Resource" id="Resource_rbcws"]
+script = ExtResource("4")
+graph_name = "Graph"
+variables = Array[ExtResource("5")]([SubResource("Resource_esinw")])
+nodes = {
+"10ff283d-c5f8-4d82-9cd1-f174bf06d0bc": SubResource("Resource_spt1f"),
+"20149d16-adf0-454d-9eea-67054f1939d0": SubResource("Resource_txbew"),
+"4580be0b-3a29-4187-884d-1f16cb90493b": SubResource("Resource_u4xox"),
+"4a1e4a20-7b38-4c7d-82a3-45d7548686e0": SubResource("Resource_klv6q"),
+"542e74eb-6f8f-491f-be51-bcc0c6691ebd": SubResource("Resource_35x8s"),
+"5d1c219d-f558-43ef-b8d9-2c2dfd97f888": SubResource("Resource_4bamt"),
+"66ae60a8-d724-4da5-b686-6052a032db58": SubResource("Resource_hus8a"),
+"844169a9-7a0c-4128-8cf1-99cf87099924": SubResource("Resource_ar4rr"),
+"99eb5be0-7a86-498d-8c7d-b249e7b7b806": SubResource("Resource_7wnbb"),
+"9a566f8b-1cd1-4ae3-9fad-ec0ca9449ecf": SubResource("Resource_fdw1d"),
+"9d41116f-c777-4bcf-99d8-db9f19975d5b": SubResource("Resource_e37vd"),
+"a25cf0ec-f619-48cd-8a2d-874799d4be25": SubResource("Resource_533yc"),
+"aee8b9ec-f0d4-4981-8a0b-ec092703f5c3": SubResource("Resource_2m8dt"),
+"ca67f044-1543-40f6-aa0d-eccfb817cfd8": SubResource("Resource_8n7gn")
+}
+connections = Array[ExtResource("1")]([SubResource("Resource_uhimj"), SubResource("Resource_dltvv"), SubResource("Resource_lubag"), SubResource("Resource_vj272"), SubResource("Resource_nrogm"), SubResource("Resource_neil5"), SubResource("Resource_rr8cj"), SubResource("Resource_k1w6h"), SubResource("Resource_gllm1")])
+logic_container = null
+frames = Array[ExtResource("2")]([])
+inputs = Array[String]([])
+outputs = Array[String]([])
+
+[sub_resource type="Resource" id="Resource_jwoo0"]
+script = ExtResource("7")
+sheet_name = "Switch"
+num_sprites = 2
+num_layers = 1
+sprite_width = 8
+sprite_height = 8
+num_pixels_per_sprite = 64
+sprite_data = [[Array[int]([1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0])], [Array[int]([1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1])]]
+sprite_properties = Array[Dictionary]([{}, {}])
+
+[sub_resource type="Resource" id="Resource_ldkts"]
+script = ExtResource("6")
+object_name = "Switch"
+animation_frames = Array[int]([])
+animations = [[0, 1]]
+sprite_sheet = SubResource("Resource_jwoo0")
+object_logic = SubResource("Resource_rbcws")
+draw_mode = 0
+num_dynamic = 0
+single_colour = -1
+properties = {}
+
+[sub_resource type="Resource" id="Resource_qnjxk"]
+script = ExtResource("9")
+object = SubResource("Resource_ldkts")
+object_ref_name = "Switch"
+initial_pos = Vector2i(40, 8)
+flags = {
+"active": true,
+"collide": false,
+"collide_background": false,
+"player": false,
+"visible": true
+}
+on_layers = 1
+intersect_layers = 1
+instance_variables = {}
+var_array = [0]
+def_var_array = [0]
+timeline_animations = {}
+timeline_anim_array = []
+current_animation = 0
+animation = 0
+current_frame = 0
+is_global = false
+animation_rate = 10
+properties = {
+"plane": 0
+}
+
+[sub_resource type="Resource" id="Resource_7ok7k"]
+script = ExtResource("4")
+graph_name = "Graph"
+variables = Array[ExtResource("5")]([])
+nodes = {}
+connections = Array[ExtResource("1")]([])
+frames = Array[ExtResource("2")]([])
+inputs = Array[String]([])
+outputs = Array[String]([])
+
+[sub_resource type="Resource" id="Resource_ie4fj"]
+script = ExtResource("13")
+room_name = "new room"
+map = SubResource("Resource_4xty8")
+object_refs = Array[ExtResource("9")]([SubResource("Resource_68k0y"), SubResource("Resource_qnjxk")])
+markers = Array[ExtResource("12")]([SubResource("Resource_smv1t")])
+room_logic = SubResource("Resource_7ok7k")
+
+[sub_resource type="Resource" id="Resource_y8kn1"]
+script = ExtResource("10")
+room = SubResource("Resource_ie4fj")
+room_ref_name = "new room"
+pos = Vector2i(104, 136)
+props = {
+"ink_colour": 7,
+"paper_colour": 0
+}
+ink_colour = -1
+paper_colour = -1
+var_array = []
+def_var_array = []
+
+[sub_resource type="Resource" id="Resource_r3ltg"]
+script = ExtResource("14")
+rooms = Array[ExtResource("10")]([SubResource("Resource_y8kn1")])
+object_refs = Array[ExtResource("9")]([SubResource("Resource_t60jl")])
+start_location = 0
+
+[sub_resource type="Resource" id="Resource_hvkwg"]
+script = ExtResource("4")
+graph_name = "Graph"
+variables = Array[ExtResource("5")]([])
+nodes = {}
+connections = Array[ExtResource("1")]([])
+frames = Array[ExtResource("2")]([])
+inputs = Array[String]([])
+outputs = Array[String]([])
+
+[sub_resource type="Resource" id="Resource_3rjlj"]
+script = ExtResource("11")
+map_name = "unnamed"
+cells = {}
+attrs = {}
+brushes = {}
+metadata/_custom_type_script = "uid://bstlhmjgmke7a"
+
+[sub_resource type="Resource" id="Resource_oe7tb"]
+script = ExtResource("4")
+graph_name = "Graph"
+variables = Array[ExtResource("5")]([])
+nodes = {}
+connections = Array[ExtResource("1")]([])
+frames = Array[ExtResource("2")]([])
+inputs = Array[String]([])
+outputs = Array[String]([])
+metadata/_custom_type_script = "uid://cx1khln4eb0rb"
+
+[sub_resource type="Resource" id="Resource_f4ul4"]
+script = ExtResource("15")
+screen_name = "Default"
+is_game_screen = true
+window_position = Vector2i(0, 0)
+instruments = Array[ExtResource("16")]([])
+screen_logic = SubResource("Resource_oe7tb")
+background_colour = -1
+ink_colour = -1
+properties = {
+"ink_colour": 7,
+"paper_colour": 0
+}
+var_array = []
+def_var_array = []
+map = SubResource("Resource_3rjlj")
+
+[sub_resource type="Resource" id="Resource_2eind"]
+script = ExtResource("18")
+type = 1
+frames = 20
+frame_length = 50
+pitch = 2000
+pitch_slide = -50
+duty = 128
+duty_slide = 0
+noise_pitch = 100
+noise_pitch_slide = 0
+
+[sub_resource type="Resource" id="Resource_h5due"]
+script = ExtResource("19")
+fx_name = "Fire"
+blocks = Array[ExtResource("18")]([SubResource("Resource_2eind")])
+
+[sub_resource type="Resource" id="Resource_qm1oa"]
+script = ExtResource("7")
+sheet_name = ""
+num_sprites = 1
+num_layers = 1
+sprite_width = 8
+sprite_height = 8
+num_pixels_per_sprite = 64
+sprite_data = [[Array[int]([1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1])]]
+sprite_properties = Array[Dictionary]([{
+"collision": 15,
+"type": 0.0
+}])
+
+[resource]
+script = ExtResource("17")
+major_version = 0
+minor_version = 0
+build_version = 114
+window = Rect2i(0, 0, 256, 192)
+format_version_string = "0.1"
+sprite_sheets = Array[ExtResource("7")]([SubResource("Resource_wnpwt"), SubResource("Resource_jwoo0")])
+tile_sheet = SubResource("Resource_qm1oa")
+objects = Array[ExtResource("6")]([SubResource("Resource_7kfyl"), SubResource("Resource_3j4h2"), SubResource("Resource_ldkts")])
+graph_resource = SubResource("Resource_hvkwg")
+global_variables = []
+rooms = Array[ExtResource("13")]([SubResource("Resource_ie4fj")])
+game_map = SubResource("Resource_r3ltg")
+screens = Array[ExtResource("15")]([SubResource("Resource_f4ul4")])
+initial_screen = 0
+text_data = []
+brushes = Array[ExtResource("8")]([SubResource("Resource_0rhij")])
+sounds = {
+"beep_fx": [SubResource("Resource_h5due")]
+}
+images = {}
+breakpoints = {
+"d88024cf-90d9-4d4f-adb8-2e357e5e271d": {
+"class": SubResource("Resource_7kfyl"),
+"enabled": false
+}
+}
+properties = {}
+max_dynamic_objects = 10
+subgraphs = Array[ExtResource("20")]([])

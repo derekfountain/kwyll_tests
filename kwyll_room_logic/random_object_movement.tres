@@ -1,0 +1,320 @@
+[gd_resource type="Resource" script_class="IB_GT_GameData" load_steps=46 format=3]
+
+[ext_resource type="Script" path="res://brush.gd" id="1"]
+[ext_resource type="Script" path="res://object_ref.gd" id="2"]
+[ext_resource type="Script" path="res://room_ref.gd" id="3"]
+[ext_resource type="Script" path="res://map.gd" id="4"]
+[ext_resource type="Script" path="res://marker.gd" id="5"]
+[ext_resource type="Script" path="res://logic_connection.gd" id="6"]
+[ext_resource type="Script" path="res://logic_frame.gd" id="7"]
+[ext_resource type="Script" path="res://logic_graph.gd" id="8"]
+[ext_resource type="Script" path="res://logic_variable.gd" id="9"]
+[ext_resource type="Script" path="res://object.gd" id="10"]
+[ext_resource type="Script" path="res://sprite_sheet.gd" id="11"]
+[ext_resource type="Script" path="res://logic_node.gd" id="12"]
+[ext_resource type="Script" path="res://room.gd" id="13"]
+[ext_resource type="Script" path="res://game_map.gd" id="14"]
+[ext_resource type="Script" path="res://screen.gd" id="15"]
+[ext_resource type="Script" path="res://instrument.gd" id="16"]
+[ext_resource type="Script" path="res://game_data.gd" id="17"]
+[ext_resource type="Script" path="res://beep_fx_block.gd" id="18"]
+[ext_resource type="Script" path="res://beep_fx.gd" id="19"]
+
+[sub_resource type="Resource" id="Resource_j8he3"]
+script = ExtResource("4")
+map_name = "unnamed"
+cells = {}
+attrs = {}
+brushes = {}
+
+[sub_resource type="Resource" id="Resource_7v6m1"]
+script = ExtResource("8")
+graph_name = "Graph"
+variables = Array[ExtResource("9")]([])
+nodes = {}
+connections = Array[ExtResource("6")]([])
+logic_container = null
+frames = Array[ExtResource("7")]([])
+
+[sub_resource type="Resource" id="Resource_wnpwt"]
+script = ExtResource("11")
+sheet_name = "Main"
+num_sprites = 2
+num_layers = 2
+sprite_width = 16
+sprite_height = 16
+num_pixels_per_sprite = 256
+sprite_data = [[Array[int]([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]), Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]), Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])]]
+sprite_properties = Array[Dictionary]([{}, {}])
+
+[sub_resource type="Resource" id="Resource_ep4wh"]
+script = ExtResource("10")
+object_name = "Square"
+animation_frames = Array[int]([])
+animations = [[0], [1]]
+sprite_sheet = SubResource("Resource_wnpwt")
+object_logic = SubResource("Resource_7v6m1")
+draw_mode = 0
+num_dynamic = 0
+single_colour = -1
+properties = {}
+
+[sub_resource type="Resource" id="Resource_yb5sh"]
+script = ExtResource("2")
+object = SubResource("Resource_ep4wh")
+object_ref_name = "Square"
+initial_pos = Vector2i(8, 8)
+flags = {
+"active": true,
+"collide": false,
+"collide_background": false,
+"player": false,
+"visible": true
+}
+instance_variables = {}
+var_array = []
+def_var_array = []
+timeline_animations = {}
+timeline_anim_array = []
+current_animation = 0
+animation = 0
+current_frame = 0
+is_global = false
+animation_rate = 10
+properties = {}
+
+[sub_resource type="Resource" id="Resource_rwaom"]
+script = ExtResource("6")
+from_node = "7ef1bd1a-f301-4010-962a-4a2363ade098"
+to_node = "d9942ea6-637a-45be-85cf-35b65d6066d4"
+from_port = 0
+from_port_name = "flow_out"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_pu7q7"]
+script = ExtResource("6")
+from_node = "eebcd349-c117-4c09-b9ea-a6faffe73725"
+to_node = "d9942ea6-637a-45be-85cf-35b65d6066d4"
+from_port = 0
+from_port_name = "ref"
+to_port = 1
+to_port_name = "ref"
+type = 2
+
+[sub_resource type="Resource" id="Resource_0jseo"]
+script = ExtResource("6")
+from_node = "16938bf6-616b-49ab-8924-2b88b4ce6faa"
+to_node = "d9942ea6-637a-45be-85cf-35b65d6066d4"
+from_port = 0
+from_port_name = "value"
+to_port = 2
+to_port_name = "x"
+type = 1
+
+[sub_resource type="Resource" id="Resource_37j4b"]
+script = ExtResource("6")
+from_node = "62921e5c-b13b-4654-8df4-b80e88528fd8"
+to_node = "d9942ea6-637a-45be-85cf-35b65d6066d4"
+from_port = 0
+from_port_name = "value"
+to_port = 3
+to_port_name = "y"
+type = 1
+
+[sub_resource type="Resource" id="Resource_q381n"]
+script = ExtResource("12")
+id = "7ef1bd1a-f301-4010-962a-4a2363ade098"
+type = "ea060114-986d-40b8-8197-fd1408d3d6d3"
+properties = {
+"order": 0
+}
+position = Vector2(462, 610)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_fxqs8"]
+script = ExtResource("12")
+id = "eebcd349-c117-4c09-b9ea-a6faffe73725"
+type = "ed7968b3-c1a1-4e6a-b087-33fd49a6e4d1"
+properties = {
+"object": 0,
+"room": 0
+}
+position = Vector2(460, 880)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_rcfbq"]
+script = ExtResource("12")
+id = "d9942ea6-637a-45be-85cf-35b65d6066d4"
+type = "99900fc9-7580-43c0-abf7-1747bf26968c"
+properties = {
+"const_x": 0,
+"const_y": 0
+}
+position = Vector2(1200, 660)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_u3t2r"]
+script = ExtResource("12")
+id = "16938bf6-616b-49ab-8924-2b88b4ce6faa"
+type = "f44a6ae6-69f1-4d1a-9afa-3a676f247ba4"
+properties = {
+"max": 240,
+"min": 0
+}
+position = Vector2(460, 1260)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_b3t2t"]
+script = ExtResource("12")
+id = "62921e5c-b13b-4654-8df4-b80e88528fd8"
+type = "f44a6ae6-69f1-4d1a-9afa-3a676f247ba4"
+properties = {
+"max": 176,
+"min": 0
+}
+position = Vector2(460, 1540)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_a6bh2"]
+script = ExtResource("12")
+id = "ced85767-25de-4dd0-88e6-bf19ba748e1d"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "This logic runs on the room, not any particular object in the room.
+So you need to specifically present the room object into the transporter."
+}
+position = Vector2(460, 340)
+node_size = Vector2(1048, 196)
+
+[sub_resource type="Resource" id="Resource_k05q7"]
+script = ExtResource("8")
+graph_name = "Graph"
+variables = Array[ExtResource("9")]([])
+nodes = {
+"16938bf6-616b-49ab-8924-2b88b4ce6faa": SubResource("Resource_u3t2r"),
+"62921e5c-b13b-4654-8df4-b80e88528fd8": SubResource("Resource_b3t2t"),
+"7ef1bd1a-f301-4010-962a-4a2363ade098": SubResource("Resource_q381n"),
+"ced85767-25de-4dd0-88e6-bf19ba748e1d": SubResource("Resource_a6bh2"),
+"d9942ea6-637a-45be-85cf-35b65d6066d4": SubResource("Resource_rcfbq"),
+"eebcd349-c117-4c09-b9ea-a6faffe73725": SubResource("Resource_fxqs8")
+}
+connections = Array[ExtResource("6")]([SubResource("Resource_rwaom"), SubResource("Resource_pu7q7"), SubResource("Resource_0jseo"), SubResource("Resource_37j4b")])
+frames = Array[ExtResource("7")]([])
+
+[sub_resource type="Resource" id="Resource_6n80q"]
+script = ExtResource("13")
+room_name = "test room"
+map = SubResource("Resource_j8he3")
+object_refs = Array[ExtResource("2")]([SubResource("Resource_yb5sh")])
+markers = Array[ExtResource("5")]([])
+room_logic = SubResource("Resource_k05q7")
+
+[sub_resource type="Resource" id="Resource_xde1d"]
+script = ExtResource("3")
+room = SubResource("Resource_6n80q")
+room_ref_name = "test room"
+pos = Vector2i(240, 208)
+props = {}
+ink_colour = 7
+paper_colour = 0
+var_array = []
+def_var_array = []
+
+[sub_resource type="Resource" id="Resource_r3ltg"]
+script = ExtResource("14")
+rooms = Array[ExtResource("3")]([SubResource("Resource_xde1d")])
+object_refs = Array[ExtResource("2")]([])
+start_location = 0
+
+[sub_resource type="Resource" id="Resource_hvkwg"]
+script = ExtResource("8")
+graph_name = "Graph"
+variables = Array[ExtResource("9")]([])
+nodes = {}
+connections = Array[ExtResource("6")]([])
+frames = Array[ExtResource("7")]([])
+
+[sub_resource type="Resource" id="Resource_3rjlj"]
+script = ExtResource("4")
+map_name = "unnamed"
+cells = {}
+attrs = {}
+brushes = {}
+metadata/_custom_type_script = "uid://bstlhmjgmke7a"
+
+[sub_resource type="Resource" id="Resource_oe7tb"]
+script = ExtResource("8")
+graph_name = "Graph"
+variables = Array[ExtResource("9")]([])
+nodes = {}
+connections = Array[ExtResource("6")]([])
+frames = Array[ExtResource("7")]([])
+metadata/_custom_type_script = "uid://cx1khln4eb0rb"
+
+[sub_resource type="Resource" id="Resource_f4ul4"]
+script = ExtResource("15")
+screen_name = "Default"
+is_game_screen = true
+window_position = Vector2i(0, 0)
+instruments = Array[ExtResource("16")]([])
+screen_logic = SubResource("Resource_oe7tb")
+background_colour = 0
+ink_colour = 7
+properties = {}
+var_array = []
+def_var_array = []
+map = SubResource("Resource_3rjlj")
+
+[sub_resource type="Resource" id="Resource_2eind"]
+script = ExtResource("18")
+type = 1
+frames = 20
+frame_length = 50
+pitch = 2000
+pitch_slide = -50
+duty = 128
+duty_slide = 0
+noise_pitch = 100
+noise_pitch_slide = 0
+
+[sub_resource type="Resource" id="Resource_h5due"]
+script = ExtResource("19")
+fx_name = "Fire"
+blocks = Array[ExtResource("18")]([SubResource("Resource_2eind")])
+
+[sub_resource type="Resource" id="Resource_qm1oa"]
+script = ExtResource("11")
+sheet_name = ""
+num_sprites = 0
+num_layers = 1
+sprite_width = 8
+sprite_height = 8
+num_pixels_per_sprite = 64
+sprite_data = []
+sprite_properties = Array[Dictionary]([])
+
+[resource]
+script = ExtResource("17")
+major_version = -1
+minor_version = -1
+build_version = -1
+window = Rect2i(0, 0, 256, 192)
+format_version_string = "0.1"
+sprite_sheets = Array[ExtResource("11")]([SubResource("Resource_wnpwt")])
+tile_sheet = SubResource("Resource_qm1oa")
+objects = Array[ExtResource("10")]([SubResource("Resource_ep4wh")])
+graph_resource = SubResource("Resource_hvkwg")
+global_variables = []
+rooms = Array[ExtResource("13")]([SubResource("Resource_6n80q")])
+game_map = SubResource("Resource_r3ltg")
+screens = Array[ExtResource("15")]([SubResource("Resource_f4ul4")])
+initial_screen = 0
+text_data = []
+brushes = Array[ExtResource("1")]([])
+sounds = {
+"beep_fx": [SubResource("Resource_h5due")]
+}
+images = {}
+breakpoints = {}

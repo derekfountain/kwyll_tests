@@ -1,0 +1,624 @@
+[gd_resource type="Resource" script_class="IB_GT_GameData" load_steps=42 format=3]
+
+[ext_resource type="Script" path="res://brush.gd" id="1"]
+[ext_resource type="Script" path="res://object_ref.gd" id="2"]
+[ext_resource type="Script" path="res://logic_connection.gd" id="3"]
+[ext_resource type="Script" path="res://logic_frame.gd" id="4"]
+[ext_resource type="Script" path="res://logic_graph.gd" id="5"]
+[ext_resource type="Script" path="res://logic_variable.gd" id="6"]
+[ext_resource type="Script" path="res://object.gd" id="7"]
+[ext_resource type="Script" path="res://sprite_sheet.gd" id="8"]
+[ext_resource type="Script" path="res://room_ref.gd" id="9"]
+[ext_resource type="Script" path="res://map.gd" id="10"]
+[ext_resource type="Script" path="res://marker.gd" id="11"]
+[ext_resource type="Script" path="res://logic_node.gd" id="12"]
+[ext_resource type="Script" path="res://room.gd" id="13"]
+[ext_resource type="Script" path="res://game_map.gd" id="14"]
+[ext_resource type="Script" path="res://screen.gd" id="15"]
+[ext_resource type="Script" path="res://instrument.gd" id="16"]
+[ext_resource type="Script" path="res://game_data.gd" id="17"]
+[ext_resource type="Script" path="res://beep_fx_block.gd" id="18"]
+[ext_resource type="Script" path="res://beep_fx.gd" id="19"]
+
+[sub_resource type="Resource" id="Resource_ygcny"]
+script = ExtResource("1")
+contents = [[{
+"attr": null,
+"tile": 10
+}, {
+"attr": null,
+"tile": 9
+}, {
+"attr": null,
+"tile": 8
+}, {
+"attr": null,
+"tile": 7
+}, {
+"attr": null,
+"tile": 6
+}, {
+"attr": null,
+"tile": 5
+}, {
+"attr": null,
+"tile": 4
+}, {
+"attr": null,
+"tile": 3
+}]]
+
+[sub_resource type="Resource" id="Resource_4d443"]
+script = ExtResource("5")
+graph_name = "Graph"
+variables = Array[ExtResource("6")]([])
+nodes = {}
+connections = Array[ExtResource("3")]([])
+logic_container = null
+frames = Array[ExtResource("4")]([])
+
+[sub_resource type="Resource" id="Resource_jr6jo"]
+script = ExtResource("8")
+sheet_name = "Ball"
+num_sprites = 6
+num_layers = 1
+sprite_width = 8
+sprite_height = 8
+num_pixels_per_sprite = 64
+sprite_data = [[Array[int]([0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0])], [Array[int]([0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0])], [Array[int]([0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0])], [Array[int]([0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0])], [Array[int]([0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0])], [Array[int]([0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0])]]
+sprite_properties = Array[Dictionary]([{}, {}, {}, {}, {}, {}])
+
+[sub_resource type="Resource" id="Resource_c4bur"]
+script = ExtResource("7")
+object_name = "Ball"
+animation_frames = Array[int]([])
+animations = [[0, 1, 2, 3, 4, 5]]
+sprite_sheet = SubResource("Resource_jr6jo")
+object_logic = SubResource("Resource_4d443")
+draw_mode = 0
+num_dynamic = 0
+single_colour = -1
+properties = {
+"ink_colour": 7,
+"paper_colour": 0
+}
+
+[sub_resource type="Resource" id="Resource_snxrm"]
+script = ExtResource("2")
+object = SubResource("Resource_c4bur")
+object_ref_name = "Ball"
+initial_pos = Vector2i(24, 8)
+flags = {
+"active": true,
+"collide": false,
+"collide_background": true,
+"player": false,
+"visible": true
+}
+instance_variables = {}
+var_array = []
+def_var_array = []
+timeline_animations = {}
+timeline_anim_array = []
+current_animation = 0
+animation = 0
+current_frame = 0
+is_global = true
+animation_rate = 10
+properties = {}
+
+[sub_resource type="Resource" id="Resource_ldmpf"]
+script = ExtResource("10")
+map_name = "unnamed"
+cells = {
+Vector2i(0, 0): 0,
+Vector2i(0, 1): 0,
+Vector2i(0, 2): 0,
+Vector2i(0, 3): 0,
+Vector2i(0, 4): 0,
+Vector2i(0, 5): 0,
+Vector2i(0, 6): 0,
+Vector2i(0, 7): 0,
+Vector2i(0, 8): 0,
+Vector2i(0, 9): 0,
+Vector2i(0, 10): 0,
+Vector2i(0, 11): 0,
+Vector2i(0, 12): 0,
+Vector2i(0, 13): 0,
+Vector2i(0, 14): 0,
+Vector2i(0, 15): 0,
+Vector2i(0, 16): 0,
+Vector2i(0, 17): 0,
+Vector2i(0, 18): 0,
+Vector2i(0, 19): 0,
+Vector2i(0, 20): 0,
+Vector2i(0, 21): 0,
+Vector2i(0, 22): 0,
+Vector2i(1, 4): 10,
+Vector2i(1, 23): 1,
+Vector2i(2, 4): 9,
+Vector2i(2, 23): 1,
+Vector2i(3, 4): 8,
+Vector2i(3, 23): 1,
+Vector2i(4, 4): 7,
+Vector2i(4, 23): 1,
+Vector2i(5, 4): 6,
+Vector2i(5, 23): 1,
+Vector2i(6, 4): 5,
+Vector2i(6, 23): 1,
+Vector2i(7, 4): 4,
+Vector2i(7, 23): 1,
+Vector2i(8, 4): 3,
+Vector2i(8, 23): 1,
+Vector2i(9, 23): 1,
+Vector2i(10, 23): 1,
+Vector2i(11, 23): 1,
+Vector2i(12, 23): 1,
+Vector2i(13, 23): 1,
+Vector2i(14, 23): 1,
+Vector2i(15, 23): 1,
+Vector2i(16, 23): 1,
+Vector2i(17, 23): 1,
+Vector2i(18, 23): 1,
+Vector2i(19, 23): 1,
+Vector2i(20, 23): 1,
+Vector2i(21, 23): 1,
+Vector2i(22, 23): 1,
+Vector2i(23, 23): 1,
+Vector2i(24, 23): 1,
+Vector2i(25, 23): 1,
+Vector2i(26, 23): 1,
+Vector2i(27, 23): 1,
+Vector2i(28, 23): 1,
+Vector2i(29, 23): 1,
+Vector2i(30, 23): 1,
+Vector2i(31, 0): 2,
+Vector2i(31, 1): 2,
+Vector2i(31, 2): 2,
+Vector2i(31, 3): 2,
+Vector2i(31, 4): 2,
+Vector2i(31, 5): 2,
+Vector2i(31, 6): 2,
+Vector2i(31, 7): 2,
+Vector2i(31, 8): 2,
+Vector2i(31, 9): 2,
+Vector2i(31, 10): 2,
+Vector2i(31, 11): 2,
+Vector2i(31, 12): 2,
+Vector2i(31, 13): 2,
+Vector2i(31, 14): 2,
+Vector2i(31, 15): 2,
+Vector2i(31, 16): 2,
+Vector2i(31, 17): 2,
+Vector2i(31, 18): 2,
+Vector2i(31, 19): 2,
+Vector2i(31, 20): 2,
+Vector2i(31, 21): 2,
+Vector2i(31, 22): 2
+}
+attrs = {
+Vector2i(0, 0): {
+"collision": 8
+},
+Vector2i(0, 1): {
+"collision": 8
+},
+Vector2i(0, 2): {
+"collision": 8
+},
+Vector2i(0, 3): {
+"collision": 8
+},
+Vector2i(0, 4): {
+"collision": 8
+},
+Vector2i(0, 5): {
+"collision": 8
+},
+Vector2i(0, 6): {
+"collision": 8
+},
+Vector2i(0, 7): {
+"collision": 8
+},
+Vector2i(0, 8): {
+"collision": 8
+},
+Vector2i(0, 9): {
+"collision": 8
+},
+Vector2i(0, 10): {
+"collision": 8
+},
+Vector2i(0, 11): {
+"collision": 8
+},
+Vector2i(0, 12): {
+"collision": 8
+},
+Vector2i(0, 13): {
+"collision": 8
+},
+Vector2i(0, 14): {
+"collision": 8
+},
+Vector2i(0, 15): {
+"collision": 8
+},
+Vector2i(0, 16): {
+"collision": 8
+},
+Vector2i(0, 17): {
+"collision": 8
+},
+Vector2i(0, 18): {
+"collision": 8
+},
+Vector2i(0, 19): {
+"collision": 8
+},
+Vector2i(0, 20): {
+"collision": 8
+},
+Vector2i(0, 21): {
+"collision": 8
+},
+Vector2i(0, 22): {
+"collision": 8
+},
+Vector2i(1, 23): {
+"collision": 1
+},
+Vector2i(2, 23): {
+"collision": 1
+},
+Vector2i(3, 23): {
+"collision": 1
+},
+Vector2i(4, 23): {
+"collision": 1
+},
+Vector2i(5, 23): {
+"collision": 1
+},
+Vector2i(6, 23): {
+"collision": 1
+},
+Vector2i(7, 23): {
+"collision": 1
+},
+Vector2i(8, 23): {
+"collision": 1
+},
+Vector2i(9, 23): {
+"collision": 1
+},
+Vector2i(10, 23): {
+"collision": 1
+},
+Vector2i(11, 23): {
+"collision": 1
+},
+Vector2i(12, 23): {
+"collision": 1
+},
+Vector2i(13, 23): {
+"collision": 1
+},
+Vector2i(14, 23): {
+"collision": 1
+},
+Vector2i(15, 23): {
+"collision": 1
+},
+Vector2i(16, 23): {
+"collision": 1
+},
+Vector2i(17, 23): {
+"collision": 1
+},
+Vector2i(18, 23): {
+"collision": 1
+},
+Vector2i(19, 23): {
+"collision": 1
+},
+Vector2i(20, 23): {
+"collision": 1
+},
+Vector2i(21, 23): {
+"collision": 1
+},
+Vector2i(22, 23): {
+"collision": 1
+},
+Vector2i(23, 23): {
+"collision": 1
+},
+Vector2i(24, 23): {
+"collision": 1
+},
+Vector2i(25, 23): {
+"collision": 1
+},
+Vector2i(26, 23): {
+"collision": 1
+},
+Vector2i(27, 23): {
+"collision": 1
+},
+Vector2i(28, 23): {
+"collision": 1
+},
+Vector2i(29, 23): {
+"collision": 1
+},
+Vector2i(30, 23): {
+"collision": 1
+},
+Vector2i(31, 0): {
+"collision": 4
+},
+Vector2i(31, 1): {
+"collision": 4
+},
+Vector2i(31, 2): {
+"collision": 4
+},
+Vector2i(31, 3): {
+"collision": 4
+},
+Vector2i(31, 4): {
+"collision": 4
+},
+Vector2i(31, 5): {
+"collision": 4
+},
+Vector2i(31, 6): {
+"collision": 4
+},
+Vector2i(31, 7): {
+"collision": 4
+},
+Vector2i(31, 8): {
+"collision": 4
+},
+Vector2i(31, 9): {
+"collision": 4
+},
+Vector2i(31, 10): {
+"collision": 4
+},
+Vector2i(31, 11): {
+"collision": 4
+},
+Vector2i(31, 12): {
+"collision": 4
+},
+Vector2i(31, 13): {
+"collision": 4
+},
+Vector2i(31, 14): {
+"collision": 4
+},
+Vector2i(31, 15): {
+"collision": 4
+},
+Vector2i(31, 16): {
+"collision": 4
+},
+Vector2i(31, 17): {
+"collision": 4
+},
+Vector2i(31, 18): {
+"collision": 4
+},
+Vector2i(31, 19): {
+"collision": 4
+},
+Vector2i(31, 20): {
+"collision": 4
+},
+Vector2i(31, 21): {
+"collision": 4
+},
+Vector2i(31, 22): {
+"collision": 4
+}
+}
+brushes = {
+Vector2i(9, 11): 0,
+Vector2i(17, 18): 0
+}
+
+[sub_resource type="Resource" id="Resource_e83by"]
+script = ExtResource("5")
+graph_name = "Graph"
+variables = Array[ExtResource("6")]([])
+nodes = {}
+connections = Array[ExtResource("3")]([])
+logic_container = null
+frames = Array[ExtResource("4")]([])
+
+[sub_resource type="Resource" id="Resource_wnpwt"]
+script = ExtResource("8")
+sheet_name = "Main"
+num_sprites = 1
+num_layers = 2
+sprite_width = 16
+sprite_height = 16
+num_pixels_per_sprite = 256
+sprite_data = [[Array[int]([1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0]), Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])]]
+sprite_properties = Array[Dictionary]([{}])
+
+[sub_resource type="Resource" id="Resource_lug14"]
+script = ExtResource("7")
+object_name = "Bucket"
+animation_frames = Array[int]([])
+animations = [[0]]
+sprite_sheet = SubResource("Resource_wnpwt")
+object_logic = SubResource("Resource_e83by")
+draw_mode = 0
+num_dynamic = 0
+single_colour = -1
+properties = {}
+
+[sub_resource type="Resource" id="Resource_q0eq0"]
+script = ExtResource("2")
+object = SubResource("Resource_lug14")
+object_ref_name = "Bucket"
+initial_pos = Vector2i(208, 168)
+flags = {
+"active": true,
+"collide": false,
+"collide_background": false,
+"player": false,
+"visible": true
+}
+instance_variables = {}
+var_array = []
+def_var_array = []
+timeline_animations = {}
+timeline_anim_array = []
+current_animation = 0
+animation = 0
+current_frame = 0
+is_global = false
+animation_rate = 10
+properties = {}
+
+[sub_resource type="Resource" id="Resource_xd7cu"]
+script = ExtResource("12")
+id = "dbd56555-91a0-4707-8bfa-383af3e9f91e"
+type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
+properties = {
+"text": "Bit of a dead end, this idea. I was thinking about having the ball roll down the slopes, but the collision detection only works on the character cell boundary, so I'd have to do this myself. Not easy."
+}
+position = Vector2(584, 566)
+node_size = Vector2(1054, 755)
+
+[sub_resource type="Resource" id="Resource_k4njf"]
+script = ExtResource("5")
+graph_name = "Graph"
+variables = Array[ExtResource("6")]([])
+nodes = {
+"dbd56555-91a0-4707-8bfa-383af3e9f91e": SubResource("Resource_xd7cu")
+}
+connections = Array[ExtResource("3")]([])
+frames = Array[ExtResource("4")]([])
+
+[sub_resource type="Resource" id="Resource_ng1jk"]
+script = ExtResource("13")
+room_name = "new room"
+map = SubResource("Resource_ldmpf")
+object_refs = Array[ExtResource("2")]([SubResource("Resource_q0eq0")])
+markers = Array[ExtResource("11")]([])
+room_logic = SubResource("Resource_k4njf")
+
+[sub_resource type="Resource" id="Resource_a682y"]
+script = ExtResource("9")
+room = SubResource("Resource_ng1jk")
+room_ref_name = "new room"
+pos = Vector2i(0, 0)
+props = {}
+ink_colour = 7
+paper_colour = 0
+var_array = []
+def_var_array = []
+
+[sub_resource type="Resource" id="Resource_r3ltg"]
+script = ExtResource("14")
+rooms = Array[ExtResource("9")]([SubResource("Resource_a682y")])
+object_refs = Array[ExtResource("2")]([SubResource("Resource_snxrm")])
+start_location = 0
+
+[sub_resource type="Resource" id="Resource_hvkwg"]
+script = ExtResource("5")
+graph_name = "Graph"
+variables = Array[ExtResource("6")]([])
+nodes = {}
+connections = Array[ExtResource("3")]([])
+frames = Array[ExtResource("4")]([])
+
+[sub_resource type="Resource" id="Resource_3rjlj"]
+script = ExtResource("10")
+map_name = "unnamed"
+cells = {}
+attrs = {}
+brushes = {}
+metadata/_custom_type_script = "uid://bstlhmjgmke7a"
+
+[sub_resource type="Resource" id="Resource_oe7tb"]
+script = ExtResource("5")
+graph_name = "Graph"
+variables = Array[ExtResource("6")]([])
+nodes = {}
+connections = Array[ExtResource("3")]([])
+frames = Array[ExtResource("4")]([])
+metadata/_custom_type_script = "uid://cx1khln4eb0rb"
+
+[sub_resource type="Resource" id="Resource_f4ul4"]
+script = ExtResource("15")
+screen_name = "Default"
+is_game_screen = true
+window_position = Vector2i(0, 0)
+instruments = Array[ExtResource("16")]([])
+screen_logic = SubResource("Resource_oe7tb")
+background_colour = 0
+ink_colour = 7
+properties = {}
+var_array = []
+def_var_array = []
+map = SubResource("Resource_3rjlj")
+
+[sub_resource type="Resource" id="Resource_2eind"]
+script = ExtResource("18")
+type = 1
+frames = 20
+frame_length = 50
+pitch = 2000
+pitch_slide = -50
+duty = 128
+duty_slide = 0
+noise_pitch = 100
+noise_pitch_slide = 0
+
+[sub_resource type="Resource" id="Resource_h5due"]
+script = ExtResource("19")
+fx_name = "Fire"
+blocks = Array[ExtResource("18")]([SubResource("Resource_2eind")])
+
+[sub_resource type="Resource" id="Resource_qm1oa"]
+script = ExtResource("8")
+sheet_name = ""
+num_sprites = 11
+num_layers = 1
+sprite_width = 8
+sprite_height = 8
+num_pixels_per_sprite = 64
+sprite_data = [[Array[int]([0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1])], [Array[int]([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0])], [Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1])], [Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])], [Array[int]([1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])]]
+sprite_properties = Array[Dictionary]([{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}])
+
+[resource]
+script = ExtResource("17")
+major_version = -1
+minor_version = -1
+build_version = -1
+window = Rect2i(0, 0, 256, 192)
+format_version_string = "0.1"
+sprite_sheets = Array[ExtResource("8")]([SubResource("Resource_wnpwt"), SubResource("Resource_jr6jo")])
+tile_sheet = SubResource("Resource_qm1oa")
+objects = Array[ExtResource("7")]([SubResource("Resource_c4bur"), SubResource("Resource_lug14")])
+graph_resource = SubResource("Resource_hvkwg")
+global_variables = []
+rooms = Array[ExtResource("13")]([SubResource("Resource_ng1jk")])
+game_map = SubResource("Resource_r3ltg")
+screens = Array[ExtResource("15")]([SubResource("Resource_f4ul4")])
+initial_screen = 0
+text_data = []
+brushes = Array[ExtResource("1")]([SubResource("Resource_ygcny")])
+sounds = {
+"beep_fx": [SubResource("Resource_h5due")]
+}
+images = {}
+breakpoints = {}
