@@ -5739,10 +5739,12 @@ script = ExtResource("5")
 id = "e68a8670-d6cd-412e-9c6e-7d1d66a092ff"
 type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
 properties = {
-"text": "Collapsing tile animation"
+"text": "Collapsing tile animation.. I tried moving this into the player object logic so it only gets called when Willy moves. It made no difference to execution speed.
+
+I think logically that approach make more sense, Willy should  send a message to the room when he's standing on tiles so the room can collapse them. But it made the player logic even more complex."
 }
-position = Vector2(680, 2700)
-node_size = Vector2(406.004, 135.516)
+position = Vector2(400, 2460)
+node_size = Vector2(1117.34, 361.436)
 
 [sub_resource type="Resource" id="Resource_8uvcs"]
 script = ExtResource("5")
