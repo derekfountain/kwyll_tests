@@ -4209,7 +4209,8 @@ script = ExtResource("5")
 id = "1397ca55-8d85-4421-975c-0e8235533cf2"
 type = "ea060114-986d-40b8-8197-fd1408d3d6d3"
 properties = {
-"order": 0
+"order": 0,
+"skip": 1
 }
 position = Vector2(-1540, 800)
 node_size = Vector2(0, 0)
@@ -5202,7 +5203,7 @@ properties = {
 "const": 4,
 "variable": 0
 }
-position = Vector2(3560, 420)
+position = Vector2(3540, 1180)
 node_size = Vector2(0, 0)
 
 [sub_resource type="Resource" id="Resource_gyypp"]
@@ -5259,7 +5260,7 @@ script = ExtResource("5")
 id = "2b1067b6-34dd-49ef-bb8b-3543c9c3ec2d"
 type = "7eeabba5-a095-4ea1-9e3a-5c10d352574d"
 properties = {}
-position = Vector2(680, -100)
+position = Vector2(660, 660)
 node_size = Vector2(0, 0)
 
 [sub_resource type="Resource" id="Resource_875wi"]
@@ -5304,7 +5305,7 @@ properties = {
 "y1": 9,
 "y2": 9
 }
-position = Vector2(4200, 680)
+position = Vector2(4180, 1440)
 node_size = Vector2(0, 0)
 
 [sub_resource type="Resource" id="Resource_r1t0p"]
@@ -5325,7 +5326,7 @@ properties = {
 "comparator": 0,
 "const_opb": 8
 }
-position = Vector2(3040, 640)
+position = Vector2(3020, 1400)
 node_size = Vector2(0, 0)
 
 [sub_resource type="Resource" id="Resource_1tcpk"]
@@ -5402,7 +5403,7 @@ type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
 properties = {
 "text": "Loop the tile animation"
 }
-position = Vector2(3520, 180)
+position = Vector2(3500, 940)
 node_size = Vector2(448, 150)
 
 [sub_resource type="Resource" id="Resource_v621x"]
@@ -5431,7 +5432,7 @@ properties = {
 "const": 5,
 "variable": 2
 }
-position = Vector2(2700, -100)
+position = Vector2(2680, 660)
 node_size = Vector2(0, 0)
 
 [sub_resource type="Resource" id="Resource_2rxlh"]
@@ -5473,7 +5474,7 @@ properties = {
 "const": -1,
 "variable": 1
 }
-position = Vector2(2100, -100)
+position = Vector2(2080, 660)
 node_size = Vector2(0, 0)
 
 [sub_resource type="Resource" id="Resource_qa6yo"]
@@ -5483,7 +5484,7 @@ type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
 properties = {
 "text": "Converyor belt animation loop"
 }
-position = Vector2(680, 620)
+position = Vector2(660, 1380)
 node_size = Vector2(494.203, 198.514)
 
 [sub_resource type="Resource" id="Resource_gu5hc"]
@@ -5550,7 +5551,7 @@ properties = {
 "const": 0,
 "variable": 3
 }
-position = Vector2(960, -100)
+position = Vector2(940, 660)
 node_size = Vector2(0, 0)
 
 [sub_resource type="Resource" id="Resource_f6bbv"]
@@ -5627,7 +5628,7 @@ type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
 properties = {
 "text": "Update the tile index with the next one in rotation to create the animation"
 }
-position = Vector2(1400, 600)
+position = Vector2(1380, 1360)
 node_size = Vector2(570.78, 224.74)
 
 [sub_resource type="Resource" id="Resource_3yvcc"]
@@ -5638,7 +5639,7 @@ properties = {
 "const": 4,
 "variable": 0
 }
-position = Vector2(1540, -100)
+position = Vector2(1520, 660)
 node_size = Vector2(0, 0)
 
 [sub_resource type="Resource" id="Resource_tpjrs"]
@@ -5656,7 +5657,7 @@ type = "0a7dba4a-4b4c-4ff5-a123-a25221ed370e"
 properties = {
 "variable": 0
 }
-position = Vector2(2360, 960)
+position = Vector2(2340, 1720)
 node_size = Vector2(0, 0)
 
 [sub_resource type="Resource" id="Resource_3suri"]
@@ -5677,7 +5678,7 @@ properties = {
 "order": 0,
 "skip": 5
 }
-position = Vector2(680, 880)
+position = Vector2(660, 1640)
 node_size = Vector2(0, 0)
 
 [sub_resource type="Resource" id="Resource_g4oaq"]
@@ -5772,7 +5773,7 @@ properties = {
 "const": 1,
 "variable": 0
 }
-position = Vector2(1480, 860)
+position = Vector2(1460, 1620)
 node_size = Vector2(0, 0)
 
 [sub_resource type="Resource" id="Resource_njgor"]
