@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="IB_GT_GameData" load_steps=164 format=3]
+[gd_resource type="Resource" script_class="IB_GT_GameData" load_steps=173 format=3]
 
 [ext_resource type="Script" path="res://brush.gd" id="1"]
 [ext_resource type="Script" path="res://object_ref.gd" id="2"]
@@ -375,6 +375,56 @@ to_port = 0
 to_port_name = "flow_in"
 type = 0
 
+[sub_resource type="Resource" id="Resource_nie2p"]
+script = ExtResource("3")
+from_node = "3a2de17e-3c37-4b35-8b62-8bb675d424f0"
+to_node = "c70a7669-b5c9-4522-911e-3661bb644cbc"
+from_port = 0
+from_port_name = "flow_out"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_1777v"]
+script = ExtResource("3")
+from_node = "3a2de17e-3c37-4b35-8b62-8bb675d424f0"
+to_node = "c70a7669-b5c9-4522-911e-3661bb644cbc"
+from_port = 1
+from_port_name = "ref"
+to_port = 1
+to_port_name = "ref"
+type = 2
+
+[sub_resource type="Resource" id="Resource_v2rwh"]
+script = ExtResource("3")
+from_node = "3a2de17e-3c37-4b35-8b62-8bb675d424f0"
+to_node = "32a79e83-80b0-4446-af8c-9996022d3a6f"
+from_port = 1
+from_port_name = "ref"
+to_port = 1
+to_port_name = "ref"
+type = 2
+
+[sub_resource type="Resource" id="Resource_fab2n"]
+script = ExtResource("3")
+from_node = "c70a7669-b5c9-4522-911e-3661bb644cbc"
+to_node = "32a79e83-80b0-4446-af8c-9996022d3a6f"
+from_port = 0
+from_port_name = "true_flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
+[sub_resource type="Resource" id="Resource_phi74"]
+script = ExtResource("3")
+from_node = "32a79e83-80b0-4446-af8c-9996022d3a6f"
+to_node = "b20bbea7-ed45-4d4c-b819-9870ca35eec0"
+from_port = 0
+from_port_name = "flow"
+to_port = 0
+to_port_name = "flow_in"
+type = 0
+
 [sub_resource type="Resource" id="Resource_e74vo"]
 script = ExtResource("5")
 id = "0312c6d1-f4b0-497b-b59b-665d26ea09d4"
@@ -568,10 +618,47 @@ script = ExtResource("5")
 id = "ac01fc32-1512-46cb-ac17-8c0f3d4ebe58"
 type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
 properties = {
-"text": "If the bullet is in flight, animate it"
+"text": "If the bullet is in flight, animate it up the screen"
 }
 position = Vector2(1720, 1440)
-node_size = Vector2(517.86, 149.18)
+node_size = Vector2(520.522, 183.786)
+
+[sub_resource type="Resource" id="Resource_resq2"]
+script = ExtResource("5")
+id = "c70a7669-b5c9-4522-911e-3661bb644cbc"
+type = "19244ef0-3b3f-4b5a-abc7-dfada8c4dfc3"
+properties = {
+"object_type": 0
+}
+position = Vector2(1260, 2640)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_5fhhk"]
+script = ExtResource("5")
+id = "3a2de17e-3c37-4b35-8b62-8bb675d424f0"
+type = "63f3d2ce-3740-4eaf-a87a-1a06762b6af8"
+properties = {}
+position = Vector2(840, 2700)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_xbm0a"]
+script = ExtResource("5")
+id = "32a79e83-80b0-4446-af8c-9996022d3a6f"
+type = "42ea8ca4-440b-43db-b8d7-7841fb3959b3"
+properties = {}
+position = Vector2(1660, 3000)
+node_size = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_tfbjy"]
+script = ExtResource("5")
+id = "b20bbea7-ed45-4d4c-b819-9870ca35eec0"
+type = "53f3a6c9-2666-4c7f-8094-327c49e6771f"
+properties = {
+"const_x": -16,
+"const_y": -16
+}
+position = Vector2(2154.6, 3048.21)
+node_size = Vector2(0, 0)
 
 [sub_resource type="Resource" id="Resource_1hp4d"]
 script = ExtResource("7")
@@ -586,8 +673,10 @@ nodes = {
 "0312c6d1-f4b0-497b-b59b-665d26ea09d4": SubResource("Resource_e74vo"),
 "1a9d9898-2c3d-4457-9522-f608b78c6359": SubResource("Resource_1xor1"),
 "1b38b363-cf41-4b0d-adab-1e7ee1cf589a": SubResource("Resource_idsw0"),
+"32a79e83-80b0-4446-af8c-9996022d3a6f": SubResource("Resource_xbm0a"),
 "39d68c0a-ee76-4646-966e-e4fb1652250f": SubResource("Resource_e1jn5"),
 "3a20be17-944b-4728-bb98-c2cbcef05bf7": SubResource("Resource_xcev0"),
+"3a2de17e-3c37-4b35-8b62-8bb675d424f0": SubResource("Resource_5fhhk"),
 "59266969-c02f-487d-b90e-6cd5386914d6": SubResource("Resource_tf2fv"),
 "5c5eaba5-7206-4239-923f-5ba5b05a48cf": SubResource("Resource_cpa2g"),
 "6b1a72d8-1a9d-4157-9a05-0bc433b7efb3": SubResource("Resource_i0dss"),
@@ -596,14 +685,16 @@ nodes = {
 "9d72c527-0cf7-4273-b085-b0c7444c425e": SubResource("Resource_41q3x"),
 "a874ae31-cad9-4409-93b6-4caa01d8fe5d": SubResource("Resource_oiqkv"),
 "ac01fc32-1512-46cb-ac17-8c0f3d4ebe58": SubResource("Resource_brgtu"),
+"b20bbea7-ed45-4d4c-b819-9870ca35eec0": SubResource("Resource_tfbjy"),
 "b9b38d7e-f563-4fd0-bbeb-da77d939ccfe": SubResource("Resource_w8b2d"),
 "ba478d27-53e3-4018-b837-e75296c6c556": SubResource("Resource_otfiq"),
 "c1e8dd23-7d46-4065-9ef7-4ffbfa64b83b": SubResource("Resource_aqw3q"),
+"c70a7669-b5c9-4522-911e-3661bb644cbc": SubResource("Resource_resq2"),
 "c7732afb-a9a7-4719-8526-d5f2791b0548": SubResource("Resource_lu67t"),
 "ec261b91-b6f1-41b2-b819-bf8996b8d40f": SubResource("Resource_3vdbh"),
 "ee2b9a80-960e-43c9-8b96-5114075168c4": SubResource("Resource_eqjns")
 }
-connections = Array[ExtResource("3")]([SubResource("Resource_mjyk4"), SubResource("Resource_jknof"), SubResource("Resource_05mof"), SubResource("Resource_x14yl"), SubResource("Resource_73i08"), SubResource("Resource_crm8r"), SubResource("Resource_qkhxu"), SubResource("Resource_3x80i"), SubResource("Resource_apiji"), SubResource("Resource_jonrv"), SubResource("Resource_mxb2o"), SubResource("Resource_i24jp"), SubResource("Resource_8a6al"), SubResource("Resource_umyib"), SubResource("Resource_rb7hx"), SubResource("Resource_v4ngq"), SubResource("Resource_kxaqh")])
+connections = Array[ExtResource("3")]([SubResource("Resource_mjyk4"), SubResource("Resource_jknof"), SubResource("Resource_05mof"), SubResource("Resource_x14yl"), SubResource("Resource_73i08"), SubResource("Resource_crm8r"), SubResource("Resource_qkhxu"), SubResource("Resource_3x80i"), SubResource("Resource_apiji"), SubResource("Resource_jonrv"), SubResource("Resource_mxb2o"), SubResource("Resource_i24jp"), SubResource("Resource_8a6al"), SubResource("Resource_umyib"), SubResource("Resource_rb7hx"), SubResource("Resource_v4ngq"), SubResource("Resource_kxaqh"), SubResource("Resource_nie2p"), SubResource("Resource_1777v"), SubResource("Resource_v2rwh"), SubResource("Resource_fab2n"), SubResource("Resource_phi74")])
 logic_container = null
 frames = Array[ExtResource("4")]([])
 inputs = Array[String]([])
@@ -943,7 +1034,7 @@ type = "8f566861-9c93-4c74-a6bb-ce19067a4c0b"
 properties = {
 "text": "Bug on the ZX with Kwyll 123. Animation needs specifying, the default doesn't work"
 }
-position = Vector2(2020, 1280)
+position = Vector2(2260, 1200)
 node_size = Vector2(577.6, 243)
 
 [sub_resource type="Resource" id="Resource_quplu"]
@@ -963,7 +1054,7 @@ properties = {
 "frame": 0,
 "rate": 10
 }
-position = Vector2(2020, 1560)
+position = Vector2(2280, 1620)
 node_size = Vector2(0, 0)
 
 [sub_resource type="Resource" id="Resource_s477y"]
@@ -1073,7 +1164,7 @@ properties = {
 "ink": 2,
 "paper": 0
 }
-position = Vector2(1620, 740)
+position = Vector2(1740, 720)
 node_size = Vector2(0, 0)
 
 [sub_resource type="Resource" id="Resource_p3uv8"]
@@ -1583,7 +1674,7 @@ sprite_properties = Array[Dictionary]([{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {
 script = ExtResource("8")
 object_name = "Invader"
 animation_frames = Array[int]([])
-animations = [[0, 1, 2], [0, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]]
+animations = [[0, 1, 0, 2], [0, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]]
 sprite_sheet = SubResource("Resource_p1uu5")
 object_logic = SubResource("Resource_ttgr4")
 draw_mode = 0
